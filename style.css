@@ -1,0 +1,63 @@
+@media (max-width: 768px) {
+    .content {
+      width: 90%; /* Adjust width for smaller screens */
+      font-size: 18px; /* Adjust font size for readability */
+    }
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    background-image: url('Angkor Wat.jpg');
+    background-size: cover;
+    background-position: center;    
+}
+  
+.logo {
+    position: absolute;
+    top: -25px;
+    left: 5px;
+    z-index: 1000;
+}
+.login-signup {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    z-index: 1000;
+    color: white;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 2);
+}
+  
+.content {
+    text-align: center;
+    width: 850px;
+    font-weight: bold;
+    font-size: 24px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 2);
+}
+#h1_welcome{
+    font-size: 56px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 2);
+}
+.btn-primary{
+    padding: 15px 30px;
+    border-radius: 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    text-decoration: none;
+    font-size: 24px;
+}
+.btn-primary:hover {
+    background-color: #45a049;
+    cursor: pointer;
+}
+
+  

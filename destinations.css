@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-family: Arial, sans-serif;
+    background-image: url('/photos/Sunset-at-Angkor-Wat-Siem-Reap-Cambodia.jpg');
+    background-size: cover;
+    background-position: center;    
+}
+
+.logo {
+    position: absolute;
+    top: -25px;
+    left: 5px;
+    z-index: 1000;
+}
+
+.additional-links {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    z-index: 1000;
+    color: white;
+    font-size: 20px;
+    text-shadow:
+    2px 2px 4px rgba(0, 0, 0, 2);
+}
+
+.additional-links a {
+    margin-right: 20px;
+}
+
+.additional-links a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    position: relative;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.content {
+    position: fixed;
+    top: 100px;
+    left: 0;
+    width: 100vw;
+    height: calc(100vh - 100px);
+    overflow-y: scroll;
+    padding: 20px;
+    background-color: transparent;
+    z-index: 1000;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.content::-webkit-scrollbar {
+    display: none;
+}
+
+.content img {
+    width: 550px;
+    height: 450px;
+    object-fit: cover;
+}
+.content div {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.content h2 {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 18px;
+    color: black;
+}
+
+.content div:hover {
+    border-color: #4CAF50;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}

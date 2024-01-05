@@ -1,0 +1,159 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.content{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/photos/Sunset-at-Angkor-Wat-Siem-Reap-Cambodia.jpg');
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;    
+}
+.logo {
+    position: absolute;
+    top: -25px;
+    left: 5px;
+    z-index: 1000;
+}
+.header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: -10px; /* Adjust the margin as needed */
+}
+
+.menu .box {
+    width: 180px;
+    height: 100px;
+    background-color: #3e3e3ecb;
+    margin: 40px;
+    border-radius: 50%;
+}
+
+.menu .box p {
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.menu .box1{
+    background-color: #20c71d;
+}
+.menu .box2{
+    background-color: #20c71d;
+}
+.menu .box3{
+    background-color: #20c71d;
+}
+
+.menu .box1, .box3, .box2 p {
+    color: #fff; /* Match text color with existing design */
+}
+
+.text-white {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    z-index: 1000;
+    color: #fff;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 2);
+}
+
+.content_dynamic {
+    text-align: center;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 100%;
+    height: calc(80vh - 80px);
+    overflow-y: auto;
+    padding: 20px;
+    background-color: transparent;
+    z-index: 1000;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+
+.content_dynamic::-webkit-scrollbar {
+    display: none;
+}
+
+.content_dynamic div {
+    width: 17%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.content_dynamic img {
+    width: 100%;
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.content_dynamic h2 {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.content_dynamic div:hover {
+    border-color: #4CAF50;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+
+
+.info_dynamic {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -25px;
+    position: relative;
+}
+
+.destination-info {
+    width: 400px; /* Set a fixed width */
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px; /* Add margin to create space between sections */
+    box-sizing: border-box;
+}
+.destination-info p {
+    margin: 0px 0;
+    font-weight: bold;
+    font-size: 20px;
+}
+.destination-info span {
+    color: #333;
+}
+
